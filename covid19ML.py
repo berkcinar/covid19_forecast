@@ -6,6 +6,7 @@ def get_daily_values():
     end_point = 'https://api.covid19api.com/dayone/country/turkey/status/confirmed'
     daily_confirmed = requests.get(end_point)
     daily_confirmed_json=daily_confirmed.json()
+
     print(daily_confirmed_json)
 
     country_df = pd.DataFrame()
